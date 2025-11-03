@@ -1,0 +1,25 @@
+ieskf_fusion_node:
+  lidar_type: "ouster"
+  lidar_topic: "/robot/lidar"
+  imu_topic: "/robot/imu"
+
+front_end:
+  offset_lidar_to_imu_T: [-0.0, -0.0, 0.0]  #mid360
+  offset_lidar_to_imu_R: [1.0, 0.0, 0.0,
+                          0.0, 1.0, 0.0,
+                          0.0, 0.0, 1.0]
+
+IESKF:
+  thresh: 0.001
+  cov_gyroscope: 0.1
+  cov_acceleration: 0.1
+  cov_bias_acceleration: 0.0001
+  cov_bias_gyroscope: 0.0001
+
+map_manager:
+  local_map_resolution: 0.1 # mid360
+  voxel_size: 2.0
+
+observationModel:
+  model_type: "Po2Pl"  #现在只有
+  filter_size: 0.1 # mid360

@@ -1,0 +1,10 @@
+<launch>
+  <!-- 加载参数配置 -->
+  <rosparam file="$(find ieskf_fusion)/config/mid360.yaml" command="load" />
+
+  <!-- 启动你的节点 -->
+  <node pkg="ieskf_fusion" type="ieskf_fusion" name="ieskf_fusion" output="screen" />
+
+  <!-- 启动 RViz 并加载配置 -->
+  <node pkg="rviz" type="rviz" name="ieskf_rviz" args="-d $(find ieskf_fusion)/rviz/lio.rviz" required="true" />
+</launch>

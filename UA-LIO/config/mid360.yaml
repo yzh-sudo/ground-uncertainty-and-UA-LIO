@@ -1,0 +1,24 @@
+ieskf_fusion_node:
+  lidar_type: "mid360"
+  lidar_topic: "/livox/lidar"
+  imu_topic: "/livox/imu"
+
+front_end:
+  offset_lidar_to_imu_T: [-0.0, -0.0, 0.0]  #mid360
+  offset_lidar_to_imu_R: [1.0, 0.0, 0.0,
+                          0.0, 1.0, 0.0,
+                          0.0, 0.0, 1.0]
+
+IESKF:
+  thresh: 0.001
+  cov_gyroscope: 0.5
+  cov_acceleration: 1.0
+  cov_bias_acceleration: 0.00001
+  cov_bias_gyroscope: 0.00001
+
+map_manager:
+  local_map_resolution: 0.2 # mid360
+
+observationModel:
+  model_type: "Po2Pl"  #现在只有
+  filter_size: 0.5 # mid360
