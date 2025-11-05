@@ -32,13 +32,39 @@ The experiment video can be found on [YouTube](https://youtu.be/jDTVptWhxXg), [B
 ## Dependency
 1. **Ubuntu and ROS**
    - Ubuntu 18.04 or Ubuntu 20.04 is recommended.
+
      
 2. **GCC & G++ (only for Ubuntu 18.04)**
    - `gcc & g++ >= 9`
+
      
 3. **ROS (melodic or noetic)**
+
    
-4. **glog**
+4. **GLOG**
    ```bash
     sudo apt-get install -y libgoogle-glog-dev
+   ```
+
+
+5. **eigen**
+   ```bash
+    sudo apt-get install libeigen3-dev
+   ```
+
+
+6. **pcl**
+   ```bash
+    sudo apt-get install libpcl-dev
+   ```
+
+
+7. **livox_ros_driver**
+   ```bash
+    git clone https://github.com/Livox-SDK/Livox-SDK
+    cd Livox-SDK
+    mkdir build && cd build
+    cmake ..
+    make -j4
+    sudo make install
    ```
