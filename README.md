@@ -4,7 +4,7 @@ This paper presents an efficient LiDAR-intertial odometry with reduced Z-axis dr
 -  We propose a method for merging adjacent planes based on plane similarity. Neighboring planes with similar geometric characteristics are merged, and the uncertainty coefficients of the neighboring planes are used to update the parameters of the current plane. During residual computation, the plane information stored in the root node is directly utilized for point-to-plane matching, thereby improving both computational efficiency and overall mapping accuracy.
 -  We incorporate the proposed method into Faster-LIO and validated its effectiveness across 25 sequences from 5 public datasets. Additionally, we test the robustness of our method on our campus datasets, demonstrating that it can effectively reduce both computational time and Z-axis drift in LIO.
 
-Thanks to the work of UA-LIO, here are the relevant citation links for UA-LIO.
+Thanks to the work of UA-LIO, here are the relevant citation links for UA-LIO and Faster-LIO.
 ```bibtex
 @article{wu2025ua,
   title={UA-LIO: An Uncertainty-Aware LiDAR-Inertial Odometry for Autonomous Driving in Urban Environments},20
@@ -13,6 +13,18 @@ Thanks to the work of UA-LIO, here are the relevant citation links for UA-LIO.
   volume={74},
   pages={1--12},
   year={2025},
+  publisher={IEEE}
+}
+```
+```bibtex
+@article{bai2022faster,
+  title={Faster-LIO: Lightweight tightly coupled LiDAR-inertial odometry using parallel sparse incremental voxels},
+  author={Bai, Chunge and Xiao, Tao and Chen, Yajie and Wang, Haoqian and Zhang, Fang and Gao, Xiang},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={2},
+  pages={4861--4868},
+  year={2022},
   publisher={IEEE}
 }
 ```
