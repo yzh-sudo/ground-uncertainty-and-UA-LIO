@@ -1,4 +1,4 @@
-# ground-uncertainty-and-UA-LIO
+# ground-uncertainty
 This paper presents an efficient LiDAR-intertial odometry with reduced Z-axis drift, incorporating uncertainty in ground points, which effectively alleviates drift in the Z-axis direction during mapping. A related odometry is also developed based on the UA-LIO manuscript’s introduction.
 Thanks to the work of UA-LIO, here are the relevant citation links for UA-LIO.
 
